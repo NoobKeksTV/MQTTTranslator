@@ -23,7 +23,7 @@ const token = process.env.InfluxToken;
 
 
 const influxDB = new InfluxDB({ url, token })
-const writeApi = influxDB.getWriteApi(process.env.InfluxAPI1, process.env.InfluxAPI2)
+const writeApi = influxDB.getWriteApi(process.env.InfluxORG, process.env.InfluxBUCKET)
 
 
 writeApi.useDefaultTags({ shelly: 'flood' })
