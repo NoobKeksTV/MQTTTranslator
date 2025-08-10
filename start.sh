@@ -1,0 +1,1 @@
+screen -L -Logfile log.txt -S ShellyBroker node --env-file=.env index.js
